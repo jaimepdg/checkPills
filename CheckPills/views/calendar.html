@@ -1,0 +1,17 @@
+
+    <div ng-controller="calendarController">
+        <div class="mesContainer"><h1>{{currentMonthName}}</h1></div>
+        
+        <!-- Calendario -->
+        <div class="calendar">
+            <div class="day" ng-repeat="day in daysOfMonth" ng-class="{checked: day.checked}">
+                {{day.Date}}
+            </div>
+        </div>
+        <div class="btnContainer">
+            <div class="checkBtn" ng-click="registerPillTaken()">Glup!</div>
+        </div>
+        
+        
+        
+    </div>

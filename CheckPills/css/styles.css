@@ -1,0 +1,81 @@
+/* styles.css */
+
+/* Paleta de colores */
+:root {
+    --primary-color: #f8bbd0; /* Rosa palo */
+    --secondary-color: #f06292;
+    --accent-color: #ec407a;
+}
+html{
+    padding: 10px 5px;
+
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0 15px;
+    
+}
+
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    height: 1000px;
+}
+
+.day {
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+    height: auto;
+    font-size: 36px;
+}
+
+.checked {
+    background-color: var(--accent-color);
+    transition: background-color;
+}
+.day:hover{
+    transform: scale(1.1);
+
+    
+}
+.checkBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0px 0 0;
+    width: 15vw;
+    height: 5vh;
+    font-size: 12;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    cursor:pointer;
+    transition: transform 0.3s, font-size 0.3s;
+}
+.checkBtn:hover{
+    background-color: var(--accent-color);
+    transform: scale(1.1);
+    font-size: 200%;
+}
+.mesContainer{
+    color: var(--accent-color);
+    background-color: var(--primary-color);
+    padding: 0 15px;
+    
+}
+.mesContainer h1{
+    margin: 5px 0 5px 0;
+}
+.btnContainer{
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+}
